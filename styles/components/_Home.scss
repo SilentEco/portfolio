@@ -1,0 +1,30 @@
+.HomeWrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 0 50px;
+  height: 100%;
+
+  h1 {
+    font-size: 55px;
+    font-weight: bold;
+    margin: 20px;
+  }
+
+  .ProfileImage {
+    background-color: grey;
+    width: 410px;
+    height: 410px;
+    border-radius: 50%;
+    margin-bottom: 30px;
+  }
+
+  p {
+    margin: 10px 100px;
+  }
+
+  a {
+    font-size: large;
+    color: $highlight;
+  }
+}

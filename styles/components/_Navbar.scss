@@ -1,0 +1,16 @@
+.Navbar {
+  display: flex;
+  align-items: center;
+  box-shadow: 0 1px 1px #333;
+  background-color: $background-color;
+  height: 40px;
+
+  .NavBtn {
+    background-color: $background-color;
+    margin: 0 10px;
+
+    &.Home {
+      color: red;
+    }
+  }
+}
