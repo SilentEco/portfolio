@@ -1,6 +1,7 @@
 .HomeWrapper {
   display: flex;
   flex-direction: column;
+  justify-content: center;
   align-items: center;
   padding: 0 50px;
   height: 100%;
@@ -21,10 +22,5 @@
 
   p {
     margin: 10px 100px;
-  }
-
-  a {
-    font-size: large;
-    color: $highlight;
   }
 }

@@ -1,5 +1,10 @@
 import type { NextPage } from "next";
-import Navbar from "../components/Navbar";
+import Button from "../components/Button";
+import {
+  AiOutlineMail,
+  AiOutlineGithub,
+  AiOutlineLinkedin,
+} from "react-icons/ai";
 
 const Home: NextPage = () => {
   return (
@@ -17,7 +22,33 @@ const Home: NextPage = () => {
         Quae veniam, quo, sint, quis sit est ut eum tempore voluptate a aliquid
         incidunt veritatis. Ad, saepe odio.
       </p>
-      <a href="mailto: kram.kristopher@gmail.com">Send Email</a>
+      <div className="HomeButtonContainer">
+        <Button body={"Check out my projects"} href={"/projects"} />
+        <div className="SocialLinks">
+          <a
+            title="OPENS DEFAULT EMAIL APPLICATION"
+            href="mailto: kram.kristopher@gmail.com"
+            target="_blank"
+            rel="noreferrer"
+          >
+            <AiOutlineMail />
+          </a>
+          <a
+            href="https://github.com/SilentEco"
+            target="_blank"
+            rel="noreferrer"
+          >
+            <AiOutlineGithub />
+          </a>
+          <a
+            href="https://www.linkedin.com/in/kristopher-kram-795722207/"
+            target="_blank"
+            rel="noreferrer"
+          >
+            <AiOutlineLinkedin />
+          </a>
+        </div>
+      </div>
     </div>
   );
 };
